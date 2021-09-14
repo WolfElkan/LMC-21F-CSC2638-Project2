@@ -15,4 +15,5 @@ A **palindrome** is a string of characters (a word, phrase, or sentence) that is
 * Race car
 * A man, a plan, a canal: Panama 
 * Madam
+
 Write a Java program that uses your stack to test whether an input string is a palindrome. 
