@@ -5,19 +5,19 @@ public class Palindrome {
 	public Palindrome() {
 		stack = new LinkStack<>();
 	}
+
 	public static void main(String[] args) {
 		Palindrome pal = new Palindrome();
 		Scanner user = new Scanner(System.in);
 		System.out.println("Enter a word or phrase:");
 		String input = user.nextLine();
-		// boolean result = pal.isPalindrome(input);
-		// System.out.println(result);
 		if (pal.isPalindrome(input)) {
 			System.out.println("This is a palindrome.");
 		} else {
 			System.out.println("This is not a palindrome.");
 		}
 	}
+
 	public boolean isPalindrome(String input) {
 		int nLetters = 0;
 		for (int i=0; i<input.length(); i++) {
@@ -43,17 +43,13 @@ public class Palindrome {
 		}
 		return true;
 	}
+	
 	public boolean testLetter(char letter, int let, int nLetters) {
 		if (let < nLetters / 2) {
 			stack.push(letter);
 		} else if (let > (nLetters - 1) / 2) {
-			// System.out.print(stack.peek());
-			// System.out.println(letter);
 			return (char)letter == (char)stack.pop().data;
-		} //else {
-		// 	System.out.print(2);
-		// 	System.out.println(letter);
-		// }
+		}
 		return true;
 	}
 }
