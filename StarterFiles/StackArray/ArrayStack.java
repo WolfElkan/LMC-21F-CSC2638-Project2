@@ -24,6 +24,7 @@ public class ArrayStack<T> implements StackInterface<T> {
     // 2. set topIndex to initialCapacity
     public ArrayStack(int initialCapacity) {
 
+        stack = new T[initialCapacity];
         System.out.println("STUB ArrayStack constructor : replace with your code. ");
 
     } // end constructor    

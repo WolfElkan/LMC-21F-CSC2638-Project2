@@ -14,4 +14,7 @@ public class Node <T> {
 		foo.next = bar;
 		System.out.println(foo.next.data);
 	}
+	public T getData() {
+		return data;
+	}
 }
