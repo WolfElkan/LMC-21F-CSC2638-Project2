@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Palindrome {
-	LinkStack<Character> stack;
+	ArrayStack<Character> stack;
 	public Palindrome() {
-		stack = new LinkStack<>();
+		stack = new ArrayStack<>(4);
 	}
 
 	public static void main(String[] args) {
